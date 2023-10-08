@@ -34,18 +34,23 @@ namespace _03_ConversionesDeDatos
 
             //Son inseguras: Dos tipos de problemas
             //       :( Overflow   
-            short n3 = 30;
-           // byte n3Copia = (byte)n3;
-            byte n3Copia2 = Convert.ToByte(n3);
+             short n3 = 300;
+            byte n3Copia = (byte)n3;
+          //  byte n3Copia2 = Convert.ToByte(n3);
 
             Console.WriteLine("n3= " + n3);
-            Console.WriteLine("n3Copia= " + n3Copia2);
+            Console.WriteLine("n3Copia= " + n3Copia);
 
             //       :( pérdida de precisión
             float r1 = 9.56f;
             int r1Copia = (int)r1;
             Console.WriteLine("r1 = " + r1);
             Console.WriteLine("r1Copia = " + r1Copia);
+
+            //Definición de constante
+            const int MAXIMO = 9;
+
+           
 
             Console.ReadLine();
         }
